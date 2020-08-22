@@ -3,7 +3,7 @@
 Python Ai program hase used speech recognition and text-to-speech This app uses Google text-to-speech API, but has been updated to use offline text-to-speech with pyttsx3
 
 # Dependencies
-
+<pre><code>
 pip install speechrecognition
 pip install pyttsx3
 pip install pyaudio
@@ -19,3 +19,4 @@ pip install ecapture
 pip install wolframalpha
 pip install requests
 pip install uptime 
+</code></pre>
