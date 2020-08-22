@@ -91,8 +91,8 @@ if __name__ == '__main__':
             continue
 
         if "good bye" in statement or "ok bye" in statement or "stop" in statement:
-            speak('your personal assistant Maryo is shutting down,Good bye')
-            print('your personal assistant Maryo is shutting down,Good bye')
+            speak('your personal assistant Maryo is shutting down, Good bye')
+            print('your personal assistant Maryo is shutting down, Good bye')
             break
 
         if 'wikipedia' in statement:
@@ -138,6 +138,7 @@ if __name__ == '__main__':
 
         elif 'which architecture' in statement:
             pi = struct.calcsize('P') * 8
+            speak(f"This is {pi} bit system architecture")
             print(pi)
 
         elif 'empty recycle bin' in statement:
@@ -145,7 +146,7 @@ if __name__ == '__main__':
 
         elif 'change background' in statement:
             SPI_SETDESKWALLPAPER = 20
-            path = 'Wallpaper\\aerial-view-of-beautiful-spring-landscape-with-ita-HPA3RNS.jpg'
+            path = f"{os.getcwd()}\\wallpaper\\aerial-view-of-beautiful-spring-landscape-with-ita-HPA3RNS.jpg"
             ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, path, 3)
 
         elif 'open youtube' in statement:
