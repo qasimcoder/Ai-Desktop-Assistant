@@ -49,3 +49,4 @@ Say or type :
 23. log off
 24. good bye
 
+# Run Ai.py for text based input and Ai_voice_command.py for voice based input
